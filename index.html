@@ -16,9 +16,9 @@
             height: 100vh; /* Full screen height */
             margin: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            animation: floatEffect 10s ease-in-out infinite;
         }
 
         /* Animation for floating effect */
@@ -62,6 +62,9 @@
             text-align: center;
             margin-top: 40px;
             font-style: italic;
+            position: absolute;
+            bottom: 10px; /* Stick footer at the bottom */
+            width: 100%; /* Make sure footer spans the width */
         }
 
         /* Style for the Play/Pause button */
@@ -75,8 +78,17 @@
             font-size: 1.2em;
             cursor: pointer;
         }
+
         #playPauseBtn:hover {
             background-color: #ff8c00;
+        }
+
+        /* Style the audio player as a small square box */
+        audio {
+            width: 50px; /* Small width */
+            height: 50px; /* Small height */
+            border: none; /* Remove default border */
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -116,3 +128,4 @@
     </script>
 </body>
 </html>
+
