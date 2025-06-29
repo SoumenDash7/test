@@ -9,7 +9,7 @@
         body {
             background-image: url('bougainvillea-2477086_1280.jpg'); /* Your flower image */
             background-size: cover;
-            background-position: center;
+            background-position: center center;
             text-align: center;
             color: white;
             font-family: 'Arial', sans-serif;
@@ -19,19 +19,19 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            animation: floatEffect 5s ease-in-out infinite; /* Apply floating effect */
+            animation: floatEffect 10s ease-in-out infinite; /* Apply floating effect */
         }
 
         /* Animation for floating effect */
         @keyframes floatEffect {
             0% {
-                transform: translateY(0); /* Starting position */
+                background-position: center center;
             }
             50% {
-                transform: translateY(-10px); /* Slightly move up */
+                background-position: center top; /* Move background up */
             }
             100% {
-                transform: translateY(0); /* Return to starting position */
+                background-position: center center; /* Return to center */
             }
         }
 
@@ -129,5 +129,6 @@
     </script>
 </body>
 </html>
+
 
 
